@@ -15,7 +15,7 @@ struct Employee {
 
 Employee* GetEmployeeInfo(int index)
 {
-    Employee* pE = new Employee;
+    Employee* pE;
 
     cout << "Enter the ID for Employee " << index + 1 << ": ";
     cin >> pE->ID;
@@ -73,7 +73,7 @@ int main()
     PrintEmployeeReport(employees, size);
 
     
-    delete[] employees;
+    delete[] employees; 
 
     (void)_getch();
     return 0;
